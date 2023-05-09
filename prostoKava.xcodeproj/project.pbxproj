@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		858D91762A0A0A0200A72403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91752A0A0A0200A72403 /* AppDelegate.swift */; };
+		858D91782A0A0A0200A72403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91772A0A0A0200A72403 /* SceneDelegate.swift */; };
+		858D917D2A0A0A0200A72403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858D917B2A0A0A0200A72403 /* Main.storyboard */; };
+		858D917F2A0A0A0300A72403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858D917E2A0A0A0300A72403 /* Assets.xcassets */; };
+		858D91822A0A0A0300A72403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858D91802A0A0A0300A72403 /* LaunchScreen.storyboard */; };
+		858D918D2A0A100A00A72403 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D918C2A0A100A00A72403 /* AuthViewController.swift */; };
+		858D91902A0A38E800A72403 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D918F2A0A38E800A72403 /* AuthView.swift */; };
+		858D91922A0A47D100A72403 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91912A0A47D100A72403 /* MainTabController.swift */; };
+		858D91942A0A49FA00A72403 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91932A0A49FA00A72403 /* MainViewController.swift */; };
+		858D91962A0A4A0400A72403 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91952A0A4A0400A72403 /* HistoryViewController.swift */; };
+		858D91982A0A4A1000A72403 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91972A0A4A1000A72403 /* QRCodeViewController.swift */; };
+		858D919A2A0A4A2900A72403 /* CoffeeShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91992A0A4A2900A72403 /* CoffeeShopsViewController.swift */; };
+		858D919C2A0A4ADE00A72403 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D919B2A0A4ADE00A72403 /* MenuViewController.swift */; };
+		858D919E2A0A4B4400A72403 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D919D2A0A4B4400A72403 /* ProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		858D91722A0A0A0200A72403 /* prostoKava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prostoKava.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858D91752A0A0A0200A72403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		858D91772A0A0A0200A72403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		858D917C2A0A0A0200A72403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		858D917E2A0A0A0300A72403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		858D91812A0A0A0300A72403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		858D91832A0A0A0300A72403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858D918C2A0A100A00A72403 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		858D918F2A0A38E800A72403 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		858D91912A0A47D100A72403 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		858D91932A0A49FA00A72403 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		858D91952A0A4A0400A72403 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		858D91972A0A4A1000A72403 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		858D91992A0A4A2900A72403 /* CoffeeShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsViewController.swift; sourceTree = "<group>"; };
+		858D919B2A0A4ADE00A72403 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		858D919D2A0A4B4400A72403 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		858D916F2A0A0A0200A72403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		858D91692A0A0A0200A72403 = {
+			isa = PBXGroup;
+			children = (
+				858D91742A0A0A0200A72403 /* prostoKava */,
+				858D91732A0A0A0200A72403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		858D91732A0A0A0200A72403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				858D91722A0A0A0200A72403 /* prostoKava.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		858D91742A0A0A0200A72403 /* prostoKava */ = {
+			isa = PBXGroup;
+			children = (
+				858D918E2A0A104A00A72403 /* SupportingFiles */,
+				858D918B2A0A0FF700A72403 /* Controller */,
+				858D918A2A0A0FF300A72403 /* View */,
+				858D91892A0A0FEE00A72403 /* Model */,
+				858D917B2A0A0A0200A72403 /* Main.storyboard */,
+				858D917E2A0A0A0300A72403 /* Assets.xcassets */,
+				858D91802A0A0A0300A72403 /* LaunchScreen.storyboard */,
+				858D91832A0A0A0300A72403 /* Info.plist */,
+			);
+			path = prostoKava;
+			sourceTree = "<group>";
+		};
+		858D91892A0A0FEE00A72403 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		858D918A2A0A0FF300A72403 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				858D918F2A0A38E800A72403 /* AuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		858D918B2A0A0FF700A72403 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				858D918C2A0A100A00A72403 /* AuthViewController.swift */,
+				858D91912A0A47D100A72403 /* MainTabController.swift */,
+				858D91932A0A49FA00A72403 /* MainViewController.swift */,
+				858D91952A0A4A0400A72403 /* HistoryViewController.swift */,
+				858D91972A0A4A1000A72403 /* QRCodeViewController.swift */,
+				858D91992A0A4A2900A72403 /* CoffeeShopsViewController.swift */,
+				858D919B2A0A4ADE00A72403 /* MenuViewController.swift */,
+				858D919D2A0A4B4400A72403 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		858D918E2A0A104A00A72403 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				858D91772A0A0A0200A72403 /* SceneDelegate.swift */,
+				858D91752A0A0A0200A72403 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		858D91712A0A0A0200A72403 /* prostoKava */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858D91862A0A0A0300A72403 /* Build configuration list for PBXNativeTarget "prostoKava" */;
+			buildPhases = (
+				858D916E2A0A0A0200A72403 /* Sources */,
+				858D916F2A0A0A0200A72403 /* Frameworks */,
+				858D91702A0A0A0200A72403 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = prostoKava;
+			productName = prostoKava;
+			productReference = 858D91722A0A0A0200A72403 /* prostoKava.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858D916A2A0A0A0200A72403 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					858D91712A0A0A0200A72403 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 858D916D2A0A0A0200A72403 /* Build configuration list for PBXProject "prostoKava" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 858D91692A0A0A0200A72403;
+			productRefGroup = 858D91732A0A0A0200A72403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				858D91712A0A0A0200A72403 /* prostoKava */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		858D91702A0A0A0200A72403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858D91822A0A0A0300A72403 /* LaunchScreen.storyboard in Resources */,
+				858D917F2A0A0A0300A72403 /* Assets.xcassets in Resources */,
+				858D917D2A0A0A0200A72403 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		858D916E2A0A0A0200A72403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858D91762A0A0A0200A72403 /* AppDelegate.swift in Sources */,
+				858D919C2A0A4ADE00A72403 /* MenuViewController.swift in Sources */,
+				858D918D2A0A100A00A72403 /* AuthViewController.swift in Sources */,
+				858D919A2A0A4A2900A72403 /* CoffeeShopsViewController.swift in Sources */,
+				858D91982A0A4A1000A72403 /* QRCodeViewController.swift in Sources */,
+				858D91922A0A47D100A72403 /* MainTabController.swift in Sources */,
+				858D919E2A0A4B4400A72403 /* ProfileViewController.swift in Sources */,
+				858D91942A0A49FA00A72403 /* MainViewController.swift in Sources */,
+				858D91902A0A38E800A72403 /* AuthView.swift in Sources */,
+				858D91962A0A4A0400A72403 /* HistoryViewController.swift in Sources */,
+				858D91782A0A0A0200A72403 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		858D917B2A0A0A0200A72403 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				858D917C2A0A0A0200A72403 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		858D91802A0A0A0300A72403 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				858D91812A0A0A0300A72403 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		858D91842A0A0A0300A72403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		858D91852A0A0A0300A72403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		858D91872A0A0A0300A72403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNL8X2N9J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = prostoKava/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladimiroff.prostoKava;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		858D91882A0A0A0300A72403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNL8X2N9J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = prostoKava/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladimiroff.prostoKava;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		858D916D2A0A0A0200A72403 /* Build configuration list for PBXProject "prostoKava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858D91842A0A0A0300A72403 /* Debug */,
+				858D91852A0A0A0300A72403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858D91862A0A0A0300A72403 /* Build configuration list for PBXNativeTarget "prostoKava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858D91872A0A0A0300A72403 /* Debug */,
+				858D91882A0A0A0300A72403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 858D916A2A0A0A0200A72403 /* Project object */;
+}
