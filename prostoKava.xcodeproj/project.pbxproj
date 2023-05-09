@@ -21,6 +21,9 @@
 		858D919A2A0A4A2900A72403 /* CoffeeShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91992A0A4A2900A72403 /* CoffeeShopsViewController.swift */; };
 		858D919C2A0A4ADE00A72403 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D919B2A0A4ADE00A72403 /* MenuViewController.swift */; };
 		858D919E2A0A4B4400A72403 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D919D2A0A4B4400A72403 /* ProfileViewController.swift */; };
+		858D91A12A0A879200A72403 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91A02A0A879200A72403 /* CategoryCell.swift */; };
+		858D91A32A0A8C0700A72403 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91A22A0A8C0700A72403 /* MainHeader.swift */; };
+		858D91A52A0A8EB900A72403 /* TopCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91A42A0A8EB900A72403 /* TopCategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		858D91992A0A4A2900A72403 /* CoffeeShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsViewController.swift; sourceTree = "<group>"; };
 		858D919B2A0A4ADE00A72403 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		858D919D2A0A4B4400A72403 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		858D91A02A0A879200A72403 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		858D91A22A0A8C0700A72403 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		858D91A42A0A8EB900A72403 /* TopCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +78,12 @@
 		858D91742A0A0A0200A72403 /* prostoKava */ = {
 			isa = PBXGroup;
 			children = (
+				858D919F2A0A768D00A72403 /* Utilities */,
 				858D918E2A0A104A00A72403 /* SupportingFiles */,
 				858D918B2A0A0FF700A72403 /* Controller */,
-				858D918A2A0A0FF300A72403 /* View */,
 				858D91892A0A0FEE00A72403 /* Model */,
 				858D917B2A0A0A0200A72403 /* Main.storyboard */,
+				858D918A2A0A0FF300A72403 /* View */,
 				858D917E2A0A0A0300A72403 /* Assets.xcassets */,
 				858D91802A0A0A0300A72403 /* LaunchScreen.storyboard */,
 				858D91832A0A0A0300A72403 /* Info.plist */,
@@ -95,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				858D918F2A0A38E800A72403 /* AuthView.swift */,
+				858D91A02A0A879200A72403 /* CategoryCell.swift */,
+				858D91A22A0A8C0700A72403 /* MainHeader.swift */,
+				858D91A42A0A8EB900A72403 /* TopCategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +131,13 @@
 				858D91752A0A0A0200A72403 /* AppDelegate.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		858D919F2A0A768D00A72403 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,16 +212,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				858D91762A0A0A0200A72403 /* AppDelegate.swift in Sources */,
+				858D91A52A0A8EB900A72403 /* TopCategoryCell.swift in Sources */,
 				858D919C2A0A4ADE00A72403 /* MenuViewController.swift in Sources */,
 				858D918D2A0A100A00A72403 /* AuthViewController.swift in Sources */,
 				858D919A2A0A4A2900A72403 /* CoffeeShopsViewController.swift in Sources */,
 				858D91982A0A4A1000A72403 /* QRCodeViewController.swift in Sources */,
+				858D91A32A0A8C0700A72403 /* MainHeader.swift in Sources */,
 				858D91922A0A47D100A72403 /* MainTabController.swift in Sources */,
 				858D919E2A0A4B4400A72403 /* ProfileViewController.swift in Sources */,
 				858D91942A0A49FA00A72403 /* MainViewController.swift in Sources */,
 				858D91902A0A38E800A72403 /* AuthView.swift in Sources */,
 				858D91962A0A4A0400A72403 /* HistoryViewController.swift in Sources */,
 				858D91782A0A0A0200A72403 /* SceneDelegate.swift in Sources */,
+				858D91A12A0A879200A72403 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

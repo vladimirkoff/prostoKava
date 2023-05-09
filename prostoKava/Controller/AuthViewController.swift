@@ -79,12 +79,9 @@ class AuthViewController: UIViewController {
         
 
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             UIView.animate(withDuration: 1) {
                 self.customView.frame = CGRect(x: 0 , y: self.view.frame.height - self.customViewHeight, width: self.view.frame.width, height: self.customViewHeight)
             }
-        }
-
     }
     
 
