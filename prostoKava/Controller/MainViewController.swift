@@ -59,7 +59,7 @@ class MainViewController: UICollectionViewController {
         
         collectionView.backgroundColor = .red
     }
-    
+
     func configureAttributedString() -> NSAttributedString {
         let attributedText = NSMutableAttributedString(string: "Hello, Vladimir!\n", attributes: [.font: UIFont.boldSystemFont(ofSize: 16)])
         attributedText.append(NSAttributedString(string: "30 points", attributes: [.font: UIFont.systemFont(ofSize: 12), .foregroundColor: UIColor.red]))

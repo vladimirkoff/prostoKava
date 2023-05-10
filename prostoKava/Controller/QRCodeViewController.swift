@@ -12,6 +12,9 @@ class QRCodeViewController: UIViewController {
     
     private var count = 0
     
+    private let window = UIApplication.shared.windows.last!
+
+    
     private var scanYPos: CGFloat = 0
     
     private let qrCodeImageView: UIImageView = {
@@ -40,6 +43,26 @@ class QRCodeViewController: UIViewController {
         label.attributedText = string
         label.textAlignment = .center
         return label
+    }()
+    
+   lazy private var backgroundView: UIView = {
+
+        let view = UIView(frame: window.bounds)
+        view.backgroundColor = UIColor.black
+        view.layer.opacity = 0.5
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissView))
+        view.addGestureRecognizer(gestureRecognizer)
+        
+        return view
+    }()
+    
+   lazy private var windowView: BonusProgramView = {
+        let view = BonusProgramView(frame: CGRect(x: view.frame.midX - view.frame.width/2 + 15, y: view.frame.midY - view.frame.height/2 + 100, width: view.frame.width - 30, height: view.frame.height - 200))
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
+        
+        return view
     }()
     
     //MARK: - Lifecycle
@@ -110,7 +133,19 @@ class QRCodeViewController: UIViewController {
     
     //MARK: - Selectors
     
+    @objc func dismissView() {
+        backgroundView.removeFromSuperview()
+        
+        
+        UIView.animate(withDuration: 1) {
+            self.windowView.removeFromSuperview()
+        }
+    }
+    
     @objc func infoButtonPressed() {
-        print("Info")
+
+        window.addSubview(backgroundView)
+        window.addSubview(windowView)
+        
     }
 }

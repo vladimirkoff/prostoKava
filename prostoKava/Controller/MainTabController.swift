@@ -67,7 +67,7 @@ class MainTabBarController: UITabBarController {
         let mainVC = MainViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let main = templateNavController(image: UIImage(named: "house")!, rootVC: mainVC)
         
-        let coffeeVC = CoffeeShopsViewController()
+        let coffeeVC = CoffeeShopsViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let coffee = templateNavController(image: UIImage(named: "coffee")!, rootVC: coffeeVC)
         
         let qrCodeVC = CoffeeShopsViewController()

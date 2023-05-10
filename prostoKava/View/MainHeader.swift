@@ -30,9 +30,6 @@ class MainHeader: UICollectionReusableView {
         
         collectionView = UICollectionView(frame: CGRect(x: 0, y: self.frame.maxY - 150, width: self.frame.width, height: 150), collectionViewLayout: layout)
         
-        
-
-        
         collectionView!.delegate = self
         collectionView!.dataSource = self
         
