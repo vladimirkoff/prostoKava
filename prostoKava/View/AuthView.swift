@@ -16,6 +16,17 @@ class CustomAuthView: UIView {
     
     var delegate: CustomAuthViewDelegate?
     
+    private let acceptPrivacyPolicy: UILabel = {
+        let label = UILabel()
+        label.textColor = .systemGroupedBackground
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.text = "By clicking “Continue”, you agree to our terms of service, privacy policy and cookie policy"
+        return label
+    }()
+    
     private let phoneTextView: UITextView = {
         let tv = UITextView()
         tv.text = " +380 99 555 6338"
@@ -39,7 +50,6 @@ class CustomAuthView: UIView {
         return button
     }()
     
-    
     //MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -60,18 +70,23 @@ class CustomAuthView: UIView {
     //MARK: - Helpers
     
     func configureView() {
- 
-        let textViewFrame = CGRect(x: 0, y: 5, width: self.frame.width, height: self.frame.height / 5)
-        self.addSubview(phoneTextView)
+        
+        let textViewFrame = CGRect(x: 0, y: 5, width: frame.width, height: frame.height / 5)
+        addSubview(phoneTextView)
         
         phoneTextView.frame = textViewFrame
 
         
-        let buttonFrame = CGRect(x: 30, y: phoneTextView.frame.maxY, width: self.frame.width - 50, height:self.frame.height / 6 )
+        let buttonFrame = CGRect(x: 30, y: phoneTextView.frame.midY + 20, width: frame.width - 50, height:frame.height / 6 )
 
-        self.addSubview(continureButton)
+        addSubview(continureButton)
         continureButton.frame = buttonFrame
-
+        
+        
+        let labelFrame = CGRect(x: 10, y: continureButton.frame.maxY + 20, width: frame.width - 20, height: 50)
+        addSubview(acceptPrivacyPolicy)
+        acceptPrivacyPolicy.frame = labelFrame
+        
     }
     
     //MARK: - Selectors

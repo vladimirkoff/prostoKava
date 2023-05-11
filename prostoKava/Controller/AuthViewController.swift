@@ -10,7 +10,7 @@ import UIKit
 class AuthViewController: UIViewController {
     //MARK: - Properties
     
-    lazy private var customViewHeight = view.frame.height / 2 + 80
+    lazy private var customViewHeight = view.frame.height / 1.55
     
     private let logoImageView: UIImageView = {
         let iv = UIImageView()
@@ -32,6 +32,7 @@ class AuthViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         let text = configureAttributedString()
         label.numberOfLines = 0
+        label.textColor = .white
         label.attributedText = text
         label.textAlignment = .center
         return label
@@ -43,13 +44,12 @@ class AuthViewController: UIViewController {
         configureUI()
     }
     
-    
     //MARK: - Helpers
     
     func configureAttributedString() -> NSAttributedString {
         let attributedText = NSMutableAttributedString(string: "Join prostoKava!\n", attributes: [.font: UIFont.boldSystemFont(ofSize: 36)])
         attributedText.append(NSAttributedString(string: "\n", attributes: [.font: UIFont.systemFont(ofSize: 24), .foregroundColor: UIColor.white]))
-        attributedText.append(NSAttributedString(string: "Type in your phone number to login", attributes: [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.white]))
+        attributedText.append(NSAttributedString(string: "Type in your phone number to login", attributes: [.font: UIFont.boldSystemFont(ofSize: 16), .foregroundColor: UIColor.white]))
         return attributedText
     }
     
@@ -61,36 +61,32 @@ class AuthViewController: UIViewController {
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -12),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoImageView.heightAnchor.constraint(equalToConstant: view.frame.height / 3 + 20),
-            logoImageView.widthAnchor.constraint(equalToConstant: view.frame.width)
+            logoImageView.heightAnchor.constraint(equalToConstant: view.frame.height / 5),
+            logoImageView.widthAnchor.constraint(equalToConstant: view.frame.width / 2)
         ])
         
         view.addSubview(joinLabel)
-        
         NSLayoutConstraint.activate([
-            joinLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: -40),
+            joinLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: -16),
             joinLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
         view.addSubview(customView)
-        
-        
         customView.frame = CGRect(x: 0, y: view.frame.height + customViewHeight , width: view.frame.width, height: customViewHeight)
         
-
-        
-            UIView.animate(withDuration: 1) {
-                self.customView.frame = CGRect(x: 0 , y: self.view.frame.height - self.customViewHeight, width: self.view.frame.width, height: self.customViewHeight)
-            }
+        UIView.animate(withDuration: 1) {
+            self.customView.frame = CGRect(x: 0 , y: self.view.frame.height - self.customViewHeight, width: self.view.frame.width, height: self.customViewHeight)
+        }
     }
     
-
+    
 }
+
+//MARK: - CustomAuthViewDelegate
 
 extension AuthViewController: CustomAuthViewDelegate {
     func continueButtonPressed() {
         let vc = MainTabBarController()
-        
         navigationController?.pushViewController(vc, animated: true)
     }
 }

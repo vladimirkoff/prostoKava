@@ -7,44 +7,11 @@
 
 import UIKit
 
-private let reuseIdentifier = "ProfileOptionCell"
+private let reuseIdentifier = "ProfileCell"
+private let headerReuseIdentifier = "ProfileHeader"
+private let footerReuseIdentifier = "ProfileFooter"
 
-class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    //MARK: - Properties
-    
-    lazy private var tableView = UITableView(frame: CGRect(x: 0, y: changeProfilePhotoButton.frame.maxY + view.frame.height / 3, width: view.frame.width, height: view.frame.height / 3))
-    
-    lazy private var changeProfilePhotoButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.clipsToBounds = true
-        button.backgroundColor = .red
-        button.addTarget(self, action: #selector(chooseImage), for: .touchUpInside)
-        button.heightAnchor.constraint(equalToConstant: 140).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 140).isActive = true
-        button.layer.cornerRadius = 140 / 2
-        return button
-    }()
-    
-    lazy var saveButton: UIButton = {
-         let button = UIButton()
-        button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
-         button.backgroundColor = #colorLiteral(red: 0.2235294118, green: 0.2117647059, blue: 0.2745098039, alpha: 1)
-         button.setTitle("Save changes", for: .normal)
-         button.layer.cornerRadius = 40
-         button.tintColor = .white
-         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-         return button
-     }()
-    
-    private let phoneNumberLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .lightGray
-        label.text = "+380 99 555 6338"
-        label.font = UIFont.systemFont(ofSize: 18)
-        return label
-    }()
+class ProfileViewController: UICollectionViewController {
     
     //MARK: - Lifecycle
     
@@ -52,7 +19,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         configureNavBar()
         configureUI()
-        configureTableView()
+        configureCollectionView()
     }
     
     //MARK: - Helpers
@@ -64,47 +31,41 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(goBackButtonPressed))
     }
     
-    func configureTableView() {
-        tableView.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9333333333, blue: 0.8784313725, alpha: 1)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(ProfileOptionCell.self, forCellReuseIdentifier: reuseIdentifier)
+    func configureCollectionView() {
+        collectionView.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9333333333, blue: 0.8784313725, alpha: 1)
+        collectionView.register(ProfileCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(ProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerReuseIdentifier)
+        collectionView.register(ProfileFooter.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: footerReuseIdentifier)
         
     }
     
     func configureUI() {
         view.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9333333333, blue: 0.8784313725, alpha: 1)
         
-        view.addSubview(tableView)
-
-        view.addSubview(changeProfilePhotoButton)
-        NSLayoutConstraint.activate([
-            changeProfilePhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            changeProfilePhotoButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 4)
-        ])
-        
-        let frame = CGRect(x: view.frame.midX - 150, y: tableView.frame.maxY + 30, width: 300, height: 80)
-        saveButton.frame = frame
-        
-        view.addSubview(saveButton)
-        
-        view.addSubview(phoneNumberLabel)
-        NSLayoutConstraint.activate([
-            phoneNumberLabel.centerXAnchor.constraint(equalTo: changeProfilePhotoButton.centerXAnchor),
-            phoneNumberLabel.topAnchor.constraint(equalTo: changeProfilePhotoButton.bottomAnchor, constant: 6)
-        ])
-    
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ProfileOptionCell
-        cell.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9333333333, blue: 0.8784313725, alpha: 1)
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProfileCell
+//        cell.picker.isHidden = indexPath.row == 2 ? false : true
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        var reusableView = UICollectionReusableView()
+        if kind == UICollectionView.elementKindSectionFooter {
+            reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerReuseIdentifier, for: indexPath) as! ProfileFooter
+        } else {
+            reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! ProfileHeader
+        }
+
+        return reusableView
+    }
+    
+    
     
     //MARK: - Selectors
     
@@ -119,10 +80,27 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @objc func saveButtonPressed() {
         
     }
+    
+    
 }
 
-extension ProfileViewController {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = CGSize(width: view.frame.width, height: 50)
+        return size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let size = CGSize(width: view.frame.width, height: 185)
+        return size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        let size = CGSize(width: view.frame.width, height: 150)
+        return size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
     }
 }

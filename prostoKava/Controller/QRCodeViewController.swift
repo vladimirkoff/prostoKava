@@ -27,11 +27,12 @@ class QRCodeViewController: UIViewController {
     private let scanLine: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         view.layer.shadowColor = UIColor.green.cgColor
         view.layer.shadowOpacity = 10
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 20
+        view.layer.cornerRadius = 6
         return view
     }()
     
@@ -76,8 +77,8 @@ class QRCodeViewController: UIViewController {
     //MARK: - Helpers
     
     func configureAttributedString() -> NSAttributedString {
-        let attributedText = NSMutableAttributedString(string: "30\n", attributes: [.font: UIFont.boldSystemFont(ofSize: 56)])
-        attributedText.append(NSAttributedString(string: "Your balance", attributes: [.font: UIFont.systemFont(ofSize: 36), .foregroundColor: UIColor.black]))
+        let attributedText = NSMutableAttributedString(string: "30\n", attributes: [.font: UIFont.boldSystemFont(ofSize: 62), .foregroundColor: UIColor.black])
+        attributedText.append(NSAttributedString(string: "Your balance", attributes: [.font: UIFont.systemFont(ofSize: 24), .foregroundColor: UIColor.black]))
         return attributedText
     }
     
@@ -107,26 +108,26 @@ class QRCodeViewController: UIViewController {
         
         view.addSubview(scanLine)
         
-        let frame = CGRect(x: view.frame.width / 2 - 150, y: qrCodeImageView.frame.maxY + 100, width: 300, height: 3)
+        let frame = CGRect(x: view.frame.width / 2 - 150, y: qrCodeImageView.frame.maxY + 100, width: 300, height: 10)
         
         scanYPos = qrCodeImageView.frame.maxY + 100
         
         scanLine.frame = frame
         
-        let timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(animateScan), userInfo: nil, repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(animateScan), userInfo: nil, repeats: true)
     }
     
     @objc func animateScan() {
         if count == 0 {
             count = 1
-            UIView.animate(withDuration: 3) {
-                self.scanLine.frame = CGRect(x: self.view.frame.width / 2 - 150, y: self.scanYPos + 300, width: 300, height: 3)
+            UIView.animate(withDuration: 1.5) {
+                self.scanLine.frame = CGRect(x: self.view.frame.width / 2 - 150, y: self.scanYPos + 300, width: 300, height: 10)
             }
             
         } else {
             count = 0
-            UIView.animate(withDuration: 3) {
-                self.scanLine.frame = CGRect(x: self.view.frame.width / 2 - 150, y: self.scanYPos, width: 300, height: 3)
+            UIView.animate(withDuration: 1.5) {
+                self.scanLine.frame = CGRect(x: self.view.frame.width / 2 - 150, y: self.scanYPos, width: 300, height: 10)
             }
         }
     }

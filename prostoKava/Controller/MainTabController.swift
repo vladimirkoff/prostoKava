@@ -11,8 +11,6 @@ class MainTabBarController: UITabBarController {
     
     //MARK: - Properties
     
-    
-    
     private let qrCodeButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +71,7 @@ class MainTabBarController: UITabBarController {
         let qrCodeVC = CoffeeShopsViewController()
         let qrCode = templateNavController(image: UIImage(named: "Empty")!, rootVC: qrCodeVC)
         
-        let historyVC = HistoryViewController()
+        let historyVC = HistoryViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let history = templateNavController(image: UIImage(named: "history")!, rootVC: historyVC)
         
         let menuVC = MenuViewController()

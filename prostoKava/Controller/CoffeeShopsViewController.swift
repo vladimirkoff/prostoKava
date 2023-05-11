@@ -17,9 +17,13 @@ class CoffeeShopsViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9333333333, blue: 0.8784313725, alpha: 1)
+        
+        
         configureNavBar()
         configureCollectionView()
     }
+    
+   
     
     //MARK: - UICollectionViewDelegate & UICollectionViewDataSource
     

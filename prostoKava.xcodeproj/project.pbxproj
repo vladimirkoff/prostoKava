@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854406D52A0CCB7300D198C0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854406D42A0CCB7300D198C0 /* Helper.swift */; };
+		854406D72A0CDD3E00D198C0 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854406D62A0CDD3E00D198C0 /* ProfileHeader.swift */; };
+		854406D92A0CDF1400D198C0 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854406D82A0CDF1400D198C0 /* ProfileCell.swift */; };
+		854406DB2A0CE16B00D198C0 /* ProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854406DA2A0CE16B00D198C0 /* ProfileFooter.swift */; };
 		858D91762A0A0A0200A72403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91752A0A0A0200A72403 /* AppDelegate.swift */; };
 		858D91782A0A0A0200A72403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91772A0A0A0200A72403 /* SceneDelegate.swift */; };
 		858D917D2A0A0A0200A72403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858D917B2A0A0A0200A72403 /* Main.storyboard */; };
@@ -27,9 +31,20 @@
 		858D91A72A0A987100A72403 /* ProfileOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91A62A0A987100A72403 /* ProfileOptionCell.swift */; };
 		858D91A92A0B8F5000A72403 /* BonusProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91A82A0B8F5000A72403 /* BonusProgramView.swift */; };
 		858D91AB2A0B998A00A72403 /* CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91AA2A0B998A00A72403 /* CoffeeShopCell.swift */; };
+		858D91AD2A0BA1F800A72403 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91AC2A0BA1F800A72403 /* OrderCell.swift */; };
+		858D91AF2A0BA48500A72403 /* HistoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91AE2A0BA48500A72403 /* HistoryHeader.swift */; };
+		858D91B12A0BAAED00A72403 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91B02A0BAAED00A72403 /* Extensions.swift */; };
+		858D91B52A0BCAF400A72403 /* ProfileSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91B42A0BCAF400A72403 /* ProfileSubView.swift */; };
+		858D91B72A0BE99600A72403 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91B62A0BE99600A72403 /* ItemsViewController.swift */; };
+		858D91B92A0BEA0700A72403 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91B82A0BEA0700A72403 /* ItemCell.swift */; };
+		858D91BB2A0BEE4400A72403 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858D91BA2A0BEE4400A72403 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		854406D42A0CCB7300D198C0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		854406D62A0CDD3E00D198C0 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		854406D82A0CDF1400D198C0 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		854406DA2A0CE16B00D198C0 /* ProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFooter.swift; sourceTree = "<group>"; };
 		858D91722A0A0A0200A72403 /* prostoKava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prostoKava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858D91752A0A0A0200A72403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		858D91772A0A0A0200A72403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +67,13 @@
 		858D91A62A0A987100A72403 /* ProfileOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionCell.swift; sourceTree = "<group>"; };
 		858D91A82A0B8F5000A72403 /* BonusProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusProgramView.swift; sourceTree = "<group>"; };
 		858D91AA2A0B998A00A72403 /* CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCell.swift; sourceTree = "<group>"; };
+		858D91AC2A0BA1F800A72403 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		858D91AE2A0BA48500A72403 /* HistoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeader.swift; sourceTree = "<group>"; };
+		858D91B02A0BAAED00A72403 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		858D91B42A0BCAF400A72403 /* ProfileSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSubView.swift; sourceTree = "<group>"; };
+		858D91B62A0BE99600A72403 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		858D91B82A0BEA0700A72403 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		858D91BA2A0BEE4400A72403 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +136,13 @@
 				858D91A62A0A987100A72403 /* ProfileOptionCell.swift */,
 				858D91A82A0B8F5000A72403 /* BonusProgramView.swift */,
 				858D91AA2A0B998A00A72403 /* CoffeeShopCell.swift */,
+				858D91AC2A0BA1F800A72403 /* OrderCell.swift */,
+				858D91AE2A0BA48500A72403 /* HistoryHeader.swift */,
+				858D91B42A0BCAF400A72403 /* ProfileSubView.swift */,
+				858D91B82A0BEA0700A72403 /* ItemCell.swift */,
+				854406D62A0CDD3E00D198C0 /* ProfileHeader.swift */,
+				854406D82A0CDF1400D198C0 /* ProfileCell.swift */,
+				854406DA2A0CE16B00D198C0 /* ProfileFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +158,8 @@
 				858D91992A0A4A2900A72403 /* CoffeeShopsViewController.swift */,
 				858D919B2A0A4ADE00A72403 /* MenuViewController.swift */,
 				858D919D2A0A4B4400A72403 /* ProfileViewController.swift */,
+				858D91B62A0BE99600A72403 /* ItemsViewController.swift */,
+				858D91BA2A0BEE4400A72403 /* ItemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +176,8 @@
 		858D919F2A0A768D00A72403 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				858D91B02A0BAAED00A72403 /* Extensions.swift */,
+				854406D42A0CCB7300D198C0 /* Helper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -223,18 +256,29 @@
 				858D91762A0A0A0200A72403 /* AppDelegate.swift in Sources */,
 				858D91A52A0A8EB900A72403 /* TopCategoryCell.swift in Sources */,
 				858D919C2A0A4ADE00A72403 /* MenuViewController.swift in Sources */,
+				858D91AF2A0BA48500A72403 /* HistoryHeader.swift in Sources */,
 				858D91A72A0A987100A72403 /* ProfileOptionCell.swift in Sources */,
+				858D91AD2A0BA1F800A72403 /* OrderCell.swift in Sources */,
+				854406D92A0CDF1400D198C0 /* ProfileCell.swift in Sources */,
+				858D91B52A0BCAF400A72403 /* ProfileSubView.swift in Sources */,
 				858D918D2A0A100A00A72403 /* AuthViewController.swift in Sources */,
 				858D919A2A0A4A2900A72403 /* CoffeeShopsViewController.swift in Sources */,
+				858D91B72A0BE99600A72403 /* ItemsViewController.swift in Sources */,
 				858D91982A0A4A1000A72403 /* QRCodeViewController.swift in Sources */,
 				858D91A32A0A8C0700A72403 /* MainHeader.swift in Sources */,
 				858D91922A0A47D100A72403 /* MainTabController.swift in Sources */,
 				858D919E2A0A4B4400A72403 /* ProfileViewController.swift in Sources */,
 				858D91942A0A49FA00A72403 /* MainViewController.swift in Sources */,
+				858D91B92A0BEA0700A72403 /* ItemCell.swift in Sources */,
 				858D91A92A0B8F5000A72403 /* BonusProgramView.swift in Sources */,
+				854406DB2A0CE16B00D198C0 /* ProfileFooter.swift in Sources */,
+				858D91BB2A0BEE4400A72403 /* ItemViewController.swift in Sources */,
+				854406D72A0CDD3E00D198C0 /* ProfileHeader.swift in Sources */,
 				858D91902A0A38E800A72403 /* AuthView.swift in Sources */,
+				858D91B12A0BAAED00A72403 /* Extensions.swift in Sources */,
 				858D91AB2A0B998A00A72403 /* CoffeeShopCell.swift in Sources */,
 				858D91962A0A4A0400A72403 /* HistoryViewController.swift in Sources */,
+				854406D52A0CCB7300D198C0 /* Helper.swift in Sources */,
 				858D91782A0A0A0200A72403 /* SceneDelegate.swift in Sources */,
 				858D91A12A0A879200A72403 /* CategoryCell.swift in Sources */,
 			);
